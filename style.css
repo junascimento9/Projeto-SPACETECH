@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background: #000000;
+}
+a{
+  text-decoration: none;
+}
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+.cabecalho-imagem {
+  height: 72px;
+}
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+}
+.cabecalho-menu-item {
+  font-family: 'Sarala', sans-serif;
+  color: #FFF2E7;
+  font-weight: 400;
+  font-size: 18px;
+  align-items:flex-end;
+}
+.wrapper {
+  height: 50vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper h2 {
+  margin: 0;
+  font-size: 150px;
+  color: rgba(251, 0, 0, 0.01);
+  background-image: url("https://enginebr.com.br/wp-content/uploads/2020/04/TRADUCAO-9-Responder-efetivamente-a-tecnologia-nao-requer-necessariamente-tecnologia.png");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  animation: animate 6s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900; 
+}
+@keyframes animate {
+  0%
+  100% {
+    background-position: left top;
+  }
+  25% {
+    background-position:right button;
+  }
+  50% {
+    background-position: left button;
+  }
+  75% {
+    background-position:right top;
+  }
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  position: fixed;
+  color: rgba(255, 255, 255, 0.753);
+  font-size: 120px;
+  transform: 
+    translate(-50%, -50%);
+  animation: 
+    morph-effect 10s
+    infinite ease-in-out;
+}
+h1:nth-child(1) {
+  animation-delay: -10s;
+}
+h1:nth-child(2) {
+  animation-delay: -5s;
+}
+
+@keyframes morph-effect {
+  0%, 20%, 100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  40%, 80% {
+    filter: blur(16px);
+    opacity: 0;
+  }
+}
+
+
+
